@@ -57,7 +57,10 @@ module.exports = {
             loader: "postcss-loader",
             options: {
               postcssOptions: {
-                plugins: [require("postcss-preset-env")],
+                plugins: [
+                  require("postcss-preset-env"),
+                  require("rucksack-css"),
+                ],
               },
             },
           },
